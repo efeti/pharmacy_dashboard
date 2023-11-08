@@ -91,10 +91,10 @@ class OrdersController extends Controller
         ]);
 
        $order->update([
-        'status' = 'unpaid',
-        'payment_link' = $data['data']['authorization_url']
+        'status' => 'unpaid',
+        'payment_link' => $data['data']['authorization_url']
        ]);
-       
+
        return redirect($data['data']['authorization_url']);
         // return redirect()->back()->with(['success' => 'Order created successfully', 'data' => $data['data']['authorizattion_url']]);
 
