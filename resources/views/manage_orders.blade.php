@@ -51,7 +51,7 @@ active
                 <td>
                     <form method="post" action="{{ route('delete_order', $order->id) }}">
                         @csrf
-                        @method('DELETE')
+                      
                         <button type="submit" class="btn btn-danger btn-block btn-sm">Delete</button>
                     </form>
                 </td>
